@@ -68,12 +68,12 @@ export default function App() {
                 title: "Projet Kasa",
                 description: "Site de location avec React – filtres, pages dynamiques, responsive design.",
                 skills: "React, Routing, Props, Sass",
-                link: "https://github.com/istvan/kasa"
+                link: "https://github.com/istvan-santa/kasa-app"
               }, {
                 title: "Mon Vieux Grimoire",
                 description: "Application fullstack de notation de livres.",
                 skills: "Node.js, Express, MongoDB, API REST",
-                link: "https://github.com/istvan/mon-vieux-grimoire"
+                link: "https://github.com/istvan-santa/P7-Dev-Web-livres"
               }].map((project, index) => (
                 <motion.div key={index} className="bg-gray-50 rounded-xl shadow-md p-6"
                   initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.2 }}>
@@ -91,16 +91,43 @@ export default function App() {
         <section className="py-20 px-4 bg-gray-100" id="contact">
           <div className="max-w-3xl mx-auto text-center">
             <motion.h2 className="text-3xl sm:text-4xl font-bold mb-6" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>Contact</motion.h2>
-            <form className="space-y-4 px-2">
-              <input type="text" placeholder="Votre nom" className="w-full px-4 py-2 rounded border border-gray-300" />
-              <input type="email" placeholder="Votre email" className="w-full px-4 py-2 rounded border border-gray-300" />
-              <textarea placeholder="Votre message" className="w-full px-4 py-2 rounded border border-gray-300"></textarea>
-              <button type="submit" className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">Envoyer</button>
-            </form>
+            <form
+  action="https://formspree.io/f/xxxxxxxx"
+  method="POST"
+  className="space-y-4 px-2"
+>
+  <input
+    type="text"
+    name="name"
+    placeholder="Votre nom"
+    required
+    className="w-full px-4 py-2 rounded border border-gray-300"
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="Votre email"
+    required
+    className="w-full px-4 py-2 rounded border border-gray-300"
+  />
+  <textarea
+    name="message"
+    placeholder="Votre message"
+    required
+    className="w-full px-4 py-2 rounded border border-gray-300"
+  ></textarea>
+  <button
+    type="submit"
+    className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition"
+  >
+    Envoyer
+  </button>
+</form>
+
             <div className="mt-8 flex flex-wrap justify-center gap-6 text-lg">
-              <a href="https://github.com/istvan" className="text-blue-600 hover:underline">GitHub</a>
-              <a href="https://linkedin.com/in/istvan" className="text-blue-600 hover:underline">LinkedIn</a>
-              <a href="https://taplink.cc/istvan" className="text-blue-600 hover:underline">Taplink</a>
+              <a href="https://github.com/istvan-santa" className="text-blue-600 hover:underline">GitHub</a>
+              <a href="https://www.linkedin.com/in/istvan-santa-835165365/" className="text-blue-600 hover:underline">LinkedIn</a>
+              <a href=" https://taplink.cc/istvansanta" className="text-blue-600 hover:underline">Taplink</a>
             </div>
           </div>
         </section>
