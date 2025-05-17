@@ -92,7 +92,7 @@ export default function App() {
           <div className="max-w-3xl mx-auto text-center">
             <motion.h2 className="text-3xl sm:text-4xl font-bold mb-6" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>Contact</motion.h2>
             <form
-  action="https://formspree.io/f/xxxxxxxx"
+  action="https://formspree.io/f/mblowpql"
   method="POST"
   className="space-y-4 px-2"
 >
